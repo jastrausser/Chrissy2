@@ -1,0 +1,17 @@
+
+<h1 mat-dialog-title>Log In</h1>
+<div mat-dialog-content>
+    <mat-form-field>
+       <mat-label>Username</mat-label>
+      <input matInput [(ngModel)]="user">
+        </mat-form-field>
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <!--input for password will be masked with type = 'password'-->
+      <input matInput [(ngModel)]="password" type = 'password'>
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onOkClick()" class ="okButton" [mat-dialog-close]="data.password" cdkFocusInitial>Ok</button>
+    <button mat-button (click)="onNoClick()">Cancel</button>
+  </div>

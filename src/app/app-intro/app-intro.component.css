@@ -1,0 +1,17 @@
+h2{
+    text-align: center;
+    font-size: 35px;
+    color: #003366;
+}
+
+h4{
+    font-size: 20px;
+}
+.teamPic{
+    height: auto;
+    width: 50%;
+    margin-right:auto;
+    margin-left: auto;
+    display:block;
+    text-align: center; 
+}

@@ -1,0 +1,22 @@
+<h1>
+  Contact Information
+</h1>
+
+
+<div class="tableHolder">
+<table>
+  <tr>
+    <th>Number</th>
+    <th>Name</th>
+    <th>Phone</th>
+  </tr>
+  <tr *ngFor="let users of Users">
+      <th>{{users.number}}</th>
+      <th>{{users.name}}</th>
+      <th>{{users.phone}}</th>
+  </tr>
+  
+</table>
+</div>
+<button mat-raised-button (click)="openDialog1()">Add Contact</button> <br>
+

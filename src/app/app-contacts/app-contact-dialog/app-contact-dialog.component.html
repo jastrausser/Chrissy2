@@ -1,0 +1,21 @@
+
+<h1 mat-dialog-title>Add Contact</h1>
+<div mat-dialog-content>
+    <mat-form-field>
+       <mat-label>Number</mat-label>
+      <input matInput [(ngModel)]="number">
+        </mat-form-field>
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput [(ngModel)]="name">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Phone</mat-label>
+        <input matInput [(ngModel)]="phone">
+      </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onOkClick1()" class ="okButton" cdkFocusInitial>Ok</button>
+    <br><br><br>
+    <button mat-button (click)="onNoClick1()">Cancel</button>
+  </div>

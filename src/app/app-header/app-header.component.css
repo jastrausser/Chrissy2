@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+li, a, button{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+  color:#97824a;
+}
+
+.logo{
+  height: 40px;
+  margin: 0px;
+  padding: 0px 0px 0px 10px;
+  justify-content: left;
+}
+
+.header{
+  display:flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px 10px 0px 0px;
+  background: #003366
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 18px;
+}
+
+li a{
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #fff;
+}
+
+li a:hover{
+  color: #97824a;
+}
+
+button{
+  padding: 9px 25px;
+  background-color: #fff;
+  border: #97824a;
+  border-style: solid;
+  height: 45px;
+  border-radius: 60px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-size: 18px;
+}
+
+button:hover{
+  background-color: #97824a;
+  color: #fff;
+}
+
+@media all and (max-width: 100%) {
+  header {
+    justify-content: space-around;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .header {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .header a, button { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .header li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .header {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .header a, button { 
+    text-align: center; 
+    padding: 10px;
+  }
+  .header li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+
